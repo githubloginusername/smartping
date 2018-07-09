@@ -43,7 +43,7 @@ IF "%select%"=="build" (
     GOTO BG
 ) ELSE (
     IF "%select%"=="run" (
-        %~dp0/bin/smartping.exe 
+        "%~dp0/bin/smartping.exe"
     ) ELSE ( 
         IF "%select%"=="install" (
             %~dp0\\bin\\nssm.exe install smartping %~dp0\\bin\\smartping.exe 
